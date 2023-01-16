@@ -10,7 +10,6 @@ const userSubject = new BehaviorSubject(
   process.browser && JSON.parse(localStorage.getItem("user"))
 );
 
-
 const login = (username, password) => {
   return fetchWrapper
     .post(`${baseUrl}/authenticate`, { username, password })
@@ -18,6 +17,9 @@ const login = (username, password) => {
       // publish user to subscribers and store in local storage to stay logged in between page refreshes
       userSubject.next(user);
       localStorage.setItem("user", JSON.stringify(user));
+      if(!localStorage.getItem("calendar")) {
+        localStorage.setItem("calendar", JSON.stringify([]));
+      }
 
       return user;
     });

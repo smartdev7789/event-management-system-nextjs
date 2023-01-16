@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { Space, Table, Button } from "antd";
 
-import { Layout } from "components/users";
+import { Layout } from "components";
 import { userService } from "services";
 
 const Index = () => {

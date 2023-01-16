@@ -1,4 +1,5 @@
-import { Layout, AddEdit } from "components/users";
+import { Layout } from "components";
+import { AddEdit } from "components/users";
 
 const Add = () => {
   return (

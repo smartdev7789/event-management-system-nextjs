@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { message } from "antd";
 
-import { Layout, AddEdit } from "components/users";
+import { Layout } from "components";
+import { AddEdit } from "components/users";
 import { userService } from "services";
 
 const Edit = ({ id }) => {

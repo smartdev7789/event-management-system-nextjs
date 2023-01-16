@@ -27,6 +27,9 @@ export const Nav = () => {
         <NavLink href="/users" className="nav-item nav-link">
           Users
         </NavLink>
+        <NavLink href="/calendar" className="nav-item nav-link">
+          Calendar
+        </NavLink>
         <a onClick={logout} className="nav-item nav-link">
           Logout
         </a>
