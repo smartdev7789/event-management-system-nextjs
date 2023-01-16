@@ -15,7 +15,7 @@ module.exports = withTM({
     apiUrl:
       process.env.NODE_ENV === "development"
         ? "http://localhost:3000/api" // development api
-        : "http://localhost:3000/api", // production api
+        : "https://event-management-system-nextjs-sta9.vercel.app/api", // production api
   },
   eslint: {
     ignoreDuringBuilds: true,
